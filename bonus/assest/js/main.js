@@ -30,7 +30,6 @@ document.getElementById('login').addEventListener('click', function () {
     //cicle for verify if mail by user is subscribe or no
     const feedback = document.getElementById('feedback');
     feedback.innerHTML= message;
-    
     //stamp the eventual messager for user
 })
 
@@ -38,16 +37,20 @@ document.getElementById('login').addEventListener('click', function () {
 ////////////////////////////////////////////////////////////////////
 
 //DADI 
-
+document.getElementById('play').addEventListener('click', function () {
 //genero un numero random tra 1 e 6 sia per user che per pc 
 
 let userNumber = Math.floor(Math.random() * 6) + 1;
 //console.log(userNumber);
 //generate a random number for user
+const userNumb = document.getElementById('usernumb');
+userNumb.innerHTML= userNumber;
 
 let computerNumber = Math.floor(Math.random() * 6) + 1;
 //console.log(computerNumber);
 //generate a random number for computer
+const pcNumb = document.getElementById('pcnumb');
+pcNumb.innerHTML= computerNumber;
 
 const array = []
 array.push(userNumber)
@@ -68,9 +71,10 @@ for (let i = 0; i < array.length; i++) {
 
 }
 //cicle for find the largest number 
-
-console.log(result);
+const theResult = document.getElementById('result');
+theResult.innerHTML= result;
+//console.log(result);
 // stamp the eventual messager for user
 
 
-
+})
