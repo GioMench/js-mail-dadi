@@ -33,17 +33,17 @@ console.log(message);
 //genero un numero random tra 1 e 6 sia per user che per pc 
 
 let userNumber = Math.floor(Math.random() * 6) + 1;
-console.log(userNumber);
+//console.log(userNumber);
 //generate a random number for user
 
 let computerNumber = Math.floor(Math.random() * 6) + 1;
-console.log(computerNumber);
+//console.log(computerNumber);
 //generate a random number for computer
 
 const array = []
 array.push(userNumber)
 array.push(computerNumber)
-console.log(array);
+//console.log(array);
 //add a user ad computer number to array
 
 let result = 'you lose'
