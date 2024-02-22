@@ -5,35 +5,38 @@
 //chiedo la mail 
 
 //let userMail = prompt('inserisci la tua mail')
-let userMail = document.getElementById('mail')
-//get mail by user
+
 
 document.getElementById('login').addEventListener('click', function () {
 
+    let userMail = document.getElementById('mail')
+    //get mail by user
     let mailList = ['a@a', 'b@b', 'c@c', 'd@d']
     //mail arrey 
 
     let message = 'Sorry, subscribe your mail'
     //message after verify mail by user if is not subscribe
-    
+
     //controllo che la mail sia presente nel mio elenco
     for (let i = 0; i < mailList.length; i++) {
         const mail = mailList[i]
 
-        if (userMail === mail) {
+        if (userMail.value === mail) {
             message = 'Welcome Back'
         }
 
 
     }
-    //cicle for verify if mail by user is subscribe or not
-    console.log(message);
+    //cicle for verify if mail by user is subscribe or no
+    const feedback = document.getElementById('feedback');
+    feedback.innerHTML= message;
+    
     //stamp the eventual messager for user
 })
 
 
 ////////////////////////////////////////////////////////////////////
-/*
+
 //DADI 
 
 //genero un numero random tra 1 e 6 sia per user che per pc 
@@ -68,7 +71,6 @@ for (let i = 0; i < array.length; i++) {
 
 console.log(result);
 // stamp the eventual messager for user
-*/
 
 
 
