@@ -3,27 +3,26 @@
 //MAIL 
 
 //chiedo la mail 
-const userMail = prompt('inserisci la tua mail')
-console.log(userMail);
+
+let userMail = prompt('inserisci la tua mail')
+//get mail by user
+let mailList = ['a@a', 'b@b', 'c@c', 'd@d']
+//mail arrey  
+let message = 'Sorry, subscribe your mail'
+//message after verify mail by user
 
 //controllo che la mail sia presente nel mio elenco
-const mailList = ['a@a','b@b', 'c@c', 'd@d']
 
+for (let i = 0; i < mailList.length; i++) {
+    const mail = mailList[i]
 
-
-for (let i = 0; i = mailList.length; i++) {
-    
-    //IF la mail è presente = message1
-    if (mailList[i] = userMail ){
-        const message1 = 'Welcome Back'
-        console.log(message1);
-    } else {
-        const message2 = 'Please, subscribe your email'
+    if (userMail === mail) {
+        message = 'Welcome Back'
     }
-    
+
 }
+//cicle for verify mail by user
 
+console.log(message);
+//stamp the eventuale messager for user
 
-
-
-//ELSE = message2
