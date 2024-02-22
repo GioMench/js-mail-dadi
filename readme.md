@@ -33,5 +33,3 @@ torniamo a scrivere in italiano
 proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 
 
-# Bonus
-Usiamo un input e un bottone per inserire la mail e poi mostriamo i risultati in pagina.
