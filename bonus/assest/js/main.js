@@ -6,7 +6,7 @@
 
 //let userMail = prompt('inserisci la tua mail')
 
-
+//add to login button the function
 document.getElementById('login').addEventListener('click', function () {
 
     let userMail = document.getElementById('mail')
@@ -37,20 +37,24 @@ document.getElementById('login').addEventListener('click', function () {
 ////////////////////////////////////////////////////////////////////
 
 //DADI 
-document.getElementById('play').addEventListener('click', function () {
-//genero un numero random tra 1 e 6 sia per user che per pc 
 
+//add to button 'play' the function
+document.getElementById('play').addEventListener('click', function () {
+
+//genero un numero random tra 1 e 6 sia per user che per pc 
 let userNumber = Math.floor(Math.random() * 6) + 1;
 //console.log(userNumber);
 //generate a random number for user
 const userNumb = document.getElementById('usernumb');
 userNumb.innerHTML= userNumber;
+//stamp the user number 
 
 let computerNumber = Math.floor(Math.random() * 6) + 1;
 //console.log(computerNumber);
 //generate a random number for computer
 const pcNumb = document.getElementById('pcnumb');
 pcNumb.innerHTML= computerNumber;
+//stamp the computer number
 
 const array = []
 array.push(userNumber)
@@ -74,7 +78,7 @@ for (let i = 0; i < array.length; i++) {
 const theResult = document.getElementById('result');
 theResult.innerHTML= result;
 //console.log(result);
-// stamp the eventual messager for user
+// stamp the eventual message for user
 
 
 })
