@@ -29,7 +29,7 @@ document.getElementById('login').addEventListener('click', function () {
     }
     //cicle for verify if mail by user is subscribe or no
     const feedback = document.getElementById('feedback');
-    feedback.innerHTML= message;
+    feedback.innerHTML = message;
     //stamp the eventual messager for user
 })
 
@@ -41,44 +41,45 @@ document.getElementById('login').addEventListener('click', function () {
 //add to button 'play' the function
 document.getElementById('play').addEventListener('click', function () {
 
-//genero un numero random tra 1 e 6 sia per user che per pc 
-let userNumber = Math.floor(Math.random() * 6) + 1;
-//console.log(userNumber);
-//generate a random number for user
-const userNumb = document.getElementById('usernumb');
-userNumb.innerHTML= userNumber;
-//stamp the user number 
+    //genero un numero random tra 1 e 6 sia per user che per pc 
+    let userNumber = Math.floor(Math.random() * 6) + 1;
+    //console.log(userNumber);
+    //generate a random number for user
+    const userNumb = document.getElementById('usernumb');
+    userNumb.innerHTML = userNumber;
+    //stamp the user number 
 
-let computerNumber = Math.floor(Math.random() * 6) + 1;
-//console.log(computerNumber);
-//generate a random number for computer
-const pcNumb = document.getElementById('pcnumb');
-pcNumb.innerHTML= computerNumber;
-//stamp the computer number
+    let computerNumber = Math.floor(Math.random() * 6) + 1;
+    //console.log(computerNumber);
+    //generate a random number for computer
+    const pcNumb = document.getElementById('pcnumb');
+    pcNumb.innerHTML = computerNumber;
+    //stamp the computer number
 
-const array = []
-array.push(userNumber)
-array.push(computerNumber)
-//console.log(array);
-//add a user ad computer number to array
+    const array = []
+    array.push(userNumber)
+    array.push(computerNumber)
+    //console.log(array);
+    //add a user ad computer number to array
 
-let result = 'you lose'
-//messager for user if he lose
+    let result = 'you lose'
+    //messager for user if he lose
 
-//stabilisco il numero più alto dei due che sara quindi il vincitore 
-for (let i = 0; i < array.length; i++) {
-    const element = array[i];
+    //stabilisco il numero più alto dei due che sara quindi il vincitore 
+    for (let i = 0; i < array.length; i++) {
+        const element = array[i];
 
-    if (userNumber > computerNumber) {
-        result = 'you win'
+        if (userNumber > computerNumber) {
+            result = 'you win'
+        }
+
     }
-
-}
-//cicle for find the largest number 
-const theResult = document.getElementById('result');
-theResult.innerHTML= result;
-//console.log(result);
-// stamp the eventual message for user
+    //cicle for find the largest number 
+    //const theResult = document.getElementById('result').append(result);
+    const theResult = document.getElementById('result');
+    theResult.innerHTML = result;
+    //console.log(result);
+    // stamp the eventual message for user
 
 
 })
